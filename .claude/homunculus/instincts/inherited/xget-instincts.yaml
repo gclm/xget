@@ -1,0 +1,437 @@
+# Instincts generated from https://github.com/gclm/xget
+# Generated: 2026-05-05T07:40:01.215Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: xget-commit-conventional
+trigger: "when writing a commit message"
+confidence: 0.85
+domain: git
+source: repo-analysis
+source_repo: https://github.com/gclm/xget
+---
+
+# Xget Commit Conventional
+
+## Action
+
+Use conventional commit format with prefixes: perf
+
+## Evidence
+
+- 1 commits analyzed
+- Detected conventional commit pattern
+- Examples: perf(cache): add strategy-based cache policy
+
+---
+id: xget-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/gclm/xget
+---
+
+# Xget Commit Length
+
+## Action
+
+Keep commit messages concise (~44 characters)
+
+## Evidence
+
+- Average commit message length: 44 chars
+- Based on 1 commits
+
+---
+id: xget-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/gclm/xget
+---
+
+# Xget Naming Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: camelCase
+
+---
+id: xget-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/gclm/xget
+---
+
+# Xget Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: xget-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/gclm/xget
+---
+
+# Xget Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: xget-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/gclm/xget
+---
+
+# Xget Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: xget-test-framework
+trigger: "when writing tests"
+confidence: 0.9
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/gclm/xget
+---
+
+# Xget Test Framework
+
+## Action
+
+Use vitest as the test framework
+
+## Evidence
+
+- Test framework detected: vitest
+- File pattern: *.test.js
+
+---
+id: xget-test-naming
+trigger: "when creating a test file"
+confidence: 0.85
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/gclm/xget
+---
+
+# Xget Test Naming
+
+## Action
+
+Name test files using the pattern: *.test.js
+
+## Evidence
+
+- File pattern: *.test.js
+- Consistent across test files
+
+---
+id: xget-test-types
+trigger: "when planning tests for a feature"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/gclm/xget
+---
+
+# Xget Test Types
+
+## Action
+
+Write unit, integration tests to match project standards
+
+## Evidence
+
+- Test types detected: unit, integration
+- Coverage config: no
+
+---
+id: xget-instinct-file-naming
+trigger: "When creating a new file in the codebase"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: gclm/xget
+---
+
+# Xget Instinct File Naming
+
+## Action
+
+Name the file using camelCase
+
+## Evidence
+
+- Pattern in namingConventions.files: camelCase
+
+---
+id: xget-instinct-function-naming
+trigger: "When defining a new function"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: gclm/xget
+---
+
+# Xget Instinct Function Naming
+
+## Action
+
+Name the function using camelCase
+
+## Evidence
+
+- Pattern in namingConventions.functions: camelCase
+
+---
+id: xget-instinct-class-naming
+trigger: "When defining a new class"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: gclm/xget
+---
+
+# Xget Instinct Class Naming
+
+## Action
+
+Name the class using PascalCase
+
+## Evidence
+
+- Pattern in namingConventions.classes: PascalCase
+
+---
+id: xget-instinct-constant-naming
+trigger: "When declaring a constant"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: gclm/xget
+---
+
+# Xget Instinct Constant Naming
+
+## Action
+
+Name the constant using SCREAMING_SNAKE_CASE
+
+## Evidence
+
+- Pattern in namingConventions.constants: SCREAMING_SNAKE_CASE
+
+---
+id: xget-instinct-import-style
+trigger: "When importing modules"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: gclm/xget
+---
+
+# Xget Instinct Import Style
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- Pattern in importStyle: relative
+
+---
+id: xget-instinct-export-style
+trigger: "When exporting from a module"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: gclm/xget
+---
+
+# Xget Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in exportStyle: named
+
+---
+id: xget-instinct-test-location
+trigger: "When adding new tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: gclm/xget
+---
+
+# Xget Instinct Test Location
+
+## Action
+
+Place test files in the separate 'test' directory
+
+## Evidence
+
+- Pattern in folderStructure.testLocation: separate
+- commonFolders includes 'test'
+
+---
+id: xget-instinct-test-pattern
+trigger: "When naming a test file"
+confidence: 0.9
+domain: testing
+source: repo-analysis
+source_repo: gclm/xget
+---
+
+# Xget Instinct Test Pattern
+
+## Action
+
+Use the '*.test.js' filename pattern
+
+## Evidence
+
+- Pattern in testing.filePattern: *.test.js
+
+---
+id: xget-instinct-test-framework
+trigger: "When writing or configuring tests"
+confidence: 0.9
+domain: testing
+source: repo-analysis
+source_repo: gclm/xget
+---
+
+# Xget Instinct Test Framework
+
+## Action
+
+Use the Vitest testing framework
+
+## Evidence
+
+- Pattern in testing.framework: vitest
+
+---
+id: xget-instinct-test-types
+trigger: "When writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: gclm/xget
+---
+
+# Xget Instinct Test Types
+
+## Action
+
+Write both unit and integration tests as appropriate
+
+## Evidence
+
+- Pattern in testing.testTypes: unit, integration
+
+---
+id: xget-instinct-commit-format
+trigger: "When making a git commit"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: gclm/xget
+---
+
+# Xget Instinct Commit Format
+
+## Action
+
+Use the Conventional Commits format, with type and optional scope (e.g., 'perf(cache): ...')
+
+## Evidence
+
+- Pattern in commits.type: conventional
+- Example: perf(cache): add strategy-based cache policy
+
+---
+id: xget-instinct-commit-prefix-perf
+trigger: "When committing a performance-related change"
+confidence: 0.8
+domain: git
+source: repo-analysis
+source_repo: gclm/xget
+---
+
+# Xget Instinct Commit Prefix Perf
+
+## Action
+
+Use the 'perf' prefix in the commit message
+
+## Evidence
+
+- Pattern in commits.prefixes: perf
+- Example: perf(cache): add strategy-based cache policy
+
+---
+id: xget-instinct-error-handling
+trigger: "When handling errors in code"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: gclm/xget
+---
+
+# Xget Instinct Error Handling
+
+## Action
+
+Use try-catch blocks for error handling
+
+## Evidence
+
+- Pattern in errorHandling.style: try-catch
+
